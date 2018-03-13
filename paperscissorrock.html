@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1348.17">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; -webkit-text-stroke: #808080}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 12.0px Helvetica; font-kerning: none; -webkit-text-stroke: 0px #000000}
+    span.s3 {font-kerning: none; background-color: #ffffff}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;script type=“text/javascript”)</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">var userChoice = prompt("Do you choose rock, paper or scissors?");</span></p>
+<p class="p1"><span class="s1">var computerChoice = Math.random();</span></p>
+<p class="p1"><span class="s1">if (computerChoice &lt; 0.34) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>computerChoice = "rock";</span></p>
+<p class="p1"><span class="s1">} else if(computerChoice &lt;= 0.67) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>computerChoice = "paper";</span></p>
+<p class="p1"><span class="s1">} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-tab-span">	</span>computerChoice = "scissors";</span></p>
+<p class="p1"><span class="s1">} console.log("Computer: " + computerChoice);</span></p>
+<p class="p1"><span class="s1">var compare = function(choice1, choice2) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">   </span>if (choice1 === choice2) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>return "The result is a tie!";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>} else if (choice1 === "rock") {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (choice2 === "scissors") {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return "rock wins";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return "paper wins";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>} else if (choice1 === "paper") {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (choice2 === "rock") {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return "paper wins";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return "scissors wins";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>} else (choice1 === "scissors"); {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (choice2 === "paper") {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return "scissors wins";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return "rock wins";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">alert(compare(userChoice , computerChoice));</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+</body>
+</html>
